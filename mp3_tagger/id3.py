@@ -60,6 +60,8 @@ class ID3Tag(object):
     def _unpack_bytes(self):
         """Stub method."""
 
+        pass
+
     def to_dict(self):
         return {self.title: self.value}
 
