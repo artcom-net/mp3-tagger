@@ -3,3 +3,7 @@ tmp/
 .idea/
 dist/
 mp3_tagger.egg-info/
+venv/
+mp3tagger.sublime-project
+mp3tagger.sublime-workspace
+
