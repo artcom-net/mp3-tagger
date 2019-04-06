@@ -182,7 +182,9 @@ class ID3TagV2(ID3Tag):
                 if re.match(r'\w+', val):
                     pass
                 else:
-                    val = int(re.search(r'\d+', val).group(0))
+                    search_match = re.search(r'\d+', val)
+                    if search_match:
+                        val = int(search_match.group(0))
         return val
 
 # Versions for filter tags.
