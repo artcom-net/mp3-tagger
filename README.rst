@@ -3,6 +3,11 @@ ID3 data editor
 This Python package allows to access ID3 tags in MP3 files. There are the usual
 operations such as *set, get, update, delete*.
 
+Prerequisites
+~~~~~~~~~~~~~
+
+- Python 3.x
+
 Supported ID3 versions:
 
 - 1.x
