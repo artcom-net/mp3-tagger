@@ -84,7 +84,8 @@ class MP3File(object):
         :return: byte string.
 
         """
-        if self.path.endswith('.mp3'):
+        _, extension = os.path.splitext(self.path)
+        if extension.lower() == '.mp3':
             try:
                 stream = open(self.path, 'r+b')
             except PermissionError:
