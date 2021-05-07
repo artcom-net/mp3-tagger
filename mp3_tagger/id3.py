@@ -175,7 +175,7 @@ class ID3TagV2(ID3Tag):
             if self.title == 'comment':
                 val = self.bytes_[3:].decode(self.encoding)
                 val = val.replace('\x00', '')
-        if self.title == 'genre':
+        if self.title == 'genre' and len(val):
             try:
                 val = int(val)
             except ValueError:
